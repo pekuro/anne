@@ -1,111 +1,381 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Anne Pekurovski art, paintings, and CV">
-        <title>Anne Pekurovski | Paintings</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <style>
-            body {
-                font-family: "Inter Tight", sans-serif;
-                padding-top: 60px;
-            }
-            img {
-                width: 100px;
-                object-fit: cover;
-                border-radius: 50px;
-                float: left;
-                margin-right: 10px;
-            }
-            p {
-                font-family: "Inter Tight", sans-serif;
-            }
 
-            em {
-                color: rgb(27, 61, 47);
-                font-style: normal;
-            }
-            header {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100px;
-            }
-            h1.headingstyle {
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 2;
-                margin-top: 20px;
-            }
-            div.container {
-                width: 80%;
-                margin: 0 auto;
-            }
-            nav.navstyle {
-                background-color: #ffffff;
-                box-shadow: 0 2px 4 px rgba(0,0,0,0.1);
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1000%;
-                height: 60px;
-            }
-            ul.ulstyle {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                height: 60px;
-            }
-            li.listyle {
-                padding: 0 15px;
-                align-self: center;
-            }
-            li.listyle a {
-                text-decoration: none;
-                color: black;
-                font-weight: 700;
-            }
-            li.listyle a:hover {
-                color: #70ade7;
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            @media (max-width: 768px) {
-                ul.ulstyle {
-                    justify-content: space-around;
-                }
-                li.listyle {
-                    padding: 0 10px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1 class="headingstyle">ANNE PEKUROVSKI</h1>
-        </header>
-        <nav class="navstyle">
-            <ul class="ulstyle">
-                <li class="listyle"><a href="#">Home</a></li>
-                <li class="listyle"><a href="#">Selected Works</a></li>
-                <li class="listyle"><a href="#">CV</a></li>
-                <li class="listyle"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container" aria-label="Main content" style="padding-top: 80px;">
-            <img src="images/yujkgkuyhg.jpg" alt="monkey">
-            <p class="hi">hello</p>
-            <p class="welc">welcome to my <em>website</em></p>
-            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae delectus laboriosam sit commodi et ab accusantium odit fugit voluptatibus, iure officiis maxime fuga cumque voluptatem harum id quidem unde.</p>
-            <a href="art/piece.html">
-                <img src="images/yujkgkuyhg.jpg" alt="art piece name"/>
-            </a>
-            <a href="mailto:apekurovski@gmail.com">Email</a>
-        </div>        
-    </body>
+```
+<meta name="description" content="Anne Pekurovski — paintings and artwork">
+
+<title>Anne Pekurovski | Paintings</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding-top: 60px;
+        font-family: "Inter Tight", sans-serif;
+        color: #111;
+        background: #fff;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 1000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-bottom: 1px solid #eee;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        gap: 35px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #70ade7;
+    }
+
+
+    /* HEADER */
+
+    header {
+        text-align: center;
+        padding: 45px 20px 60px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+
+    /* PAINTINGS */
+
+    .paintings {
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .painting {
+        margin-bottom: 140px;
+    }
+
+    .painting a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .painting img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .painting-info {
+        margin-top: 15px;
+    }
+
+    .painting-title {
+        margin: 0 0 4px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .painting-details {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+
+        body {
+            padding-top: 55px;
+        }
+
+        nav {
+            height: 55px;
+        }
+
+        nav ul {
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 14px;
+        }
+
+        header {
+            padding: 35px 20px 45px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .paintings {
+            width: 92%;
+        }
+
+        .painting {
+            margin-bottom: 90px;
+        }
+
+        .painting-title {
+            font-size: 17px;
+        }
+
+        .painting-details {
+            font-size: 14px;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- NAVIGATION -->
+
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="cv.html">CV</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!-- NAME -->
+
+<header>
+    <h1>ANNE PEKUROVSKI</h1>
+</header>
+
+
+<!-- PAINTINGS -->
+
+<main class="paintings">
+
+
+    <!-- Cloud -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2026/cloud/cloud.html">
+
+            <img
+                src="images/paintings/2026/cloud/cloud.jpeg"
+                alt="Cloud"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                Cloud
+            </p>
+
+            <p class="painting-details">
+                Oil on canvas, 2026 · 24 × 30 in
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Glass Horse -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2026/glass_horse/glass_horse.html">
+
+            <img
+                src="images/paintings/2026/glass_horse/glass_horse.jpeg"
+                alt="Glass Horse"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                Glass Horse
+            </p>
+
+            <p class="painting-details">
+                Oil on canvas, 2026 · 24 × 30 in
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Temperate Temperament -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2025/temperate_temperament/temperate_temperament.html">
+
+            <img
+                src="images/paintings/2025/temperate_temperament/temperate_temperament.jpg"
+                alt="Temperate Temperament"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                Temperate Temperament
+            </p>
+
+            <p class="painting-details">
+                Acrylic on canvas, 2025 · 20 × 24 in
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Horse Summer -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2025/horse_summer/horse_summer.html">
+
+            <img
+                src="images/paintings/2025/horse_summer/horse_summer.jpg"
+                alt="Horse Summer"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                Horse Summer
+            </p>
+
+            <p class="painting-details">
+                Oil on canvas, 2025 · 20 × 24 in
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- White Horse -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2025/white_horse/white_horse.html">
+
+            <img
+                src="images/paintings/2025/white_horse/white_horse.jpg"
+                alt="White Horse"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                White Horse
+            </p>
+
+            <p class="painting-details">
+                Oil on canvas, 2025 · 16 × 20 in
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Blue Horse -->
+
+    <section class="painting">
+
+        <a href="images/paintings/2024/blue_horse/blue_horse.html">
+
+            <img
+                src="images/paintings/2024/blue_horse/blue_horse.jpeg"
+                alt="Blue Horse"
+            >
+
+        </a>
+
+        <div class="painting-info">
+
+            <p class="painting-title">
+                Blue Horse
+            </p>
+
+            <p class="painting-details">
+                Oil on canvas, 2024 · 20 × 24 in
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--
+        more paintings.
+    -->
+
+
+</main>
+```
+
+</body>
 </html>
