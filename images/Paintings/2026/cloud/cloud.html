@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud | Anne Pekurovski</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 60px;
+            font-family: "Inter Tight", sans-serif;
+            color: #111;
+            background: #fff;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: #111;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            color: #70ade7;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 55px auto 100px;
+        }
+
+        .main-image {
+            display: block;
+            max-width: 100%;
+            max-height: calc(100vh - 140px);
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .painting-info {
+            width: fit-content;
+            max-width: 100%;
+            margin: 15px auto 60px;
+        }
+
+        .painting-title {
+            margin: 0 0 4px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .painting-details {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .details img {
+            display: block;
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                width: 94%;
+            }
+
+            nav ul {
+                gap: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+            <li><a href="../../../../cv.html">CV</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img class="main-image"
+             src="cloud.jpeg"
+             alt="Cloud">
+
+        <div class="painting-info">
+            <p class="painting-title">Cloud</p>
+            <p class="painting-details">Oil on canvas, 2026 · 24 × 30 in</p>
+        </div>
+
+        <div class="details">
+            <img src="cloud_detail.jpeg" alt="Detail of Cloud">
+            <img src="cloud_detail2.jpeg" alt="Detail of Cloud">
+            <img src="cloud_detail3.jpeg" alt="Detail of Cloud">
+            <img src="cloud_detail4.jpeg" alt="Detail of Cloud">
+        </div>
+    </main>
+</body>
+</html>
